@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+
+.wrap {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background:#2471c8;
+}
+
+nav{
+    background-color: black;
+    display: flex;
+}
+
+.Search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"]::placeholder{
+    text-align: center;
+}
+.logo {
+    background: #2471c8;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    padding-right:  15px;
+}
+
+ul li{
+    padding: 0px 25px;
+    list-style: none;
+}
+
+ul a{
+    color: white;
+    text-decoration: none;
+}
+
+ul a:hover{
+    color: black;
+}
+
+ul a:active {
+    color: blueviolet;
+}
