@@ -1,0 +1,138 @@
+@import url(style.css);
+
+*{
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    max-width: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    margin-bottom: 20px;
+}
+
+
+header{
+    background: #352619;
+}
+.h-wrap, nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+nav ul li a, .logo a{
+    color: #fff;}
+
+    nav ul li a {
+        padding: 10px 15px;
+        display: inline-block;
+    }
+
+section{
+    padding: 50px 0;
+}
+
+   .sec-hero{
+       background: #D6D3D1;
+   } 
+   .sec-h-wrap {
+    max-width: 500px;
+}
+   .sec-h-wrap h2{
+       font-size: 30px;
+   }
+   .sec-h-wrap p{
+    font-size: 14px;
+    line-height: 20px; 
+}
+.btn-custom {
+    background: #352619;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+nav ul li a:hover, .btn-custom:hover{
+    background: #71675E;
+    color: #fff;
+}
+
+.btn-custom:hover{
+    border-radius: 10px;
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+    transition: 300ms all;
+}
+.main-heading:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #352619;
+    z-index: -1;
+    opacity: 0.05;
+    font-size: 50px;
+}
+.sub-heading {
+    text-align: center;
+    padding: 20px 0;
+    letter-spacing: 2px;
+
+}
+
+
+.sec-services .main-heading:after{ content: "Our Services";}
+.sec-about-us  .main-heading:after{ content: "About Us";}
+
+.service-item {
+    margin: 0 15px;
+    border-radius:5px; 
+    padding: 15px;
+    background: #352619;
+    color: rgba(255, 255, 255, 0.611764705882353);
+    position: relative;
+    transition: 300ms all;
+    overflow: hidden;
+}
+
+.service-item i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background: #71675E;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50px 0 50px 50px;
+    font-size: 20px;
+    transition: 300ms all;
+}
+.service-item p {
+    padding-top: 25px;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.service-item:hover{
+    background: #71675e;
+    transform: scale(1.1);
+} 
+.service-item:hover p, .service-item:hover h5{
+    color: #fff;
+} 
+.service-item:hover i {
+    background: rgba(53, 38, 25, 0.2);
+}
+
